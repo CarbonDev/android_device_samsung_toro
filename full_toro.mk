@@ -21,22 +21,17 @@
 # lines, full and toro, hence its name.
 #
 
-# Camera and Gallery
-PRODUCT_PACKAGES := \
-    Gallery2
-
 #if we do this after the full_base_telephony is included some of these don't get picked up..
 PRODUCT_COPY_FILES += \
     device/samsung/toro/bcmdhd.cal:system/etc/wifi/bcmdhd.cal \
-    device/sample/etc/apns-conf_verizon.xml:system/etc/apns-conf.xml \
+    device/samsung/toro/apns-conf_verizon.xml:system/etc/apns-conf.xml \
     frameworks/native/data/etc/android.hardware.telephony.cdma.xml:system/etc/permissions/android.hardware.telephony.cdma.xml
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
-# This is where we'd set a backup provider if we had one
-#$(call inherit-product, device/sample/products/backup_overlay.mk)
+
 # Inherit from toro device
-$(call inherit-product, device/samsung/toro/device_vzw.mk)
+$(call inherit-product, device/samsung/toro/device.mk)
 
 # Set those variables here to overwrite the inherited values.
 PRODUCT_NAME := full_toro
