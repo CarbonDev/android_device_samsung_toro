@@ -6,6 +6,7 @@ windowsmgr.max_events_per_sec=275
 rild.libpath=/vendor/lib/libsec-ril_lte.so
 rild.libargs=-d /dev/ttys0
 telephony.lteOnCdmaDevice=1
+ro.config.svlte1x=true
 
 # Turn on IMS by default
 persist.radio.imsregrequired=1
