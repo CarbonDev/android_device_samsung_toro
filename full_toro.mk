@@ -19,8 +19,8 @@
 PRODUCT_PACKAGES := \
     GNexusParts
 
-# device
-$(call inherit-product, device/samsung/toro/device.mk)
-
 # telephony
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
+
+# device
+$(call inherit-product, device/samsung/toro/device.mk)
