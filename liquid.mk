@@ -4,6 +4,9 @@ PRODUCT_RELEASE_NAME := GN-CDMA
 # device
 $(call inherit-product-if-exists, device/samsung/toro/full_toro.mk)
 
+# cdma
+$(call inherit-product, vendor/liquid/config/common_cdma.mk)
+
 # phone
 $(call inherit-product, vendor/liquid/config/common_phone.mk)
 
