@@ -1,5 +1,5 @@
 # name
-PRODUCT_RELEASE_NAME := GN-VZW
+PRODUCT_RELEASE_NAME := GN-CDMA
 
 # device
 $(call inherit-product-if-exists, device/samsung/toro/full_toro.mk)
@@ -16,7 +16,6 @@ PRODUCT_BRAND := Google
 PRODUCT_NAME := liquid_toro
 PRODUCT_MODEL := Galaxy Nexus
 PRODUCT_MANUFACTURER := Samsung
-PRODUCT_RESTRICT_VENDOR_FILES := true
 PRODUCT_PROPERTY_OVERRIDES += ro.buildzipid=liquid.toro.$(shell date +%m%d%y).$(shell date +%H%M%S)
 
 # overrides
