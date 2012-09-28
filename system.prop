@@ -20,5 +20,5 @@ ro.ril.ecclist=112,911,#911,*911
 
 # Dalvik heapsize
 dalvik.vm.heapsize=256m
-dalvik.vm.heapstartsize=16m
+dalvik.vm.heapstartsize=32m
 dalvik.vm.heapgrowthlimit=128m
