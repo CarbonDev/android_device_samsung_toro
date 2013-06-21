@@ -30,3 +30,4 @@ dalvik.vm.heapminfree=2m
 dalvik.vm.heapstartsize=16m
 dalvik.vm.heapgrowthlimit=128m
 dalvik.vm.heaputilization=0.75
+

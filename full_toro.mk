@@ -1,6 +1,8 @@
 #
 # Copyright (C) 2012 The CyanogenMod Project
 # Copyright (C) 2012 The Carbon Project
+# Portions Copyright (C) 2012 VMware, Inc. All Rights Reserved.
+# Copyright (C) 2011 The Android Open Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,6 +16,19 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
+# This file is the build configuration for a full Android
+# build for toro hardware. This cleanly combines a set of
+# device-specific aspects (drivers) with a device-agnostic
+# product configuration (apps). Except for a few implementation
+# details, it only fundamentally contains two inherit-product
+# lines, full and toro, hence its name.
+#
+
+# Camera and Gallery
+
+PRODUCT_PACKAGES := \
+    Gallery \
+    GNexusParts
 
 #if we do this after the full_base_telephony is included some of these don't get picked up..
 PRODUCT_COPY_FILES += \
