@@ -23,11 +23,5 @@ ro.ril.ecclist=112,911,#911,*911
 # Default to LTE/CDMA Network Mode
 ro.telephony.default_network=7
 
-# Fields For VM Heapsize
-dalvik.vm.heapsize=256m
-dalvik.vm.heapmaxfree=8m
-dalvik.vm.heapminfree=2m
-dalvik.vm.heapstartsize=16m
-dalvik.vm.heapgrowthlimit=128m
-dalvik.vm.heaputilization=0.75
-
+# GPU producer to CPU consumer not supported
+ro.bq.gpu_to_cpu_unsupported=1
