@@ -27,8 +27,7 @@
 # Camera and Gallery
 
 PRODUCT_PACKAGES := \
-    Gallery \
-    GNexusParts
+	Gallery2
 
 # Do this before aosp_base_telephony is included since the first instance takes precedence
 PRODUCT_COPY_FILES += \
