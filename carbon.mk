@@ -7,9 +7,6 @@ OVERLAY_TARGET := pa_xhdpi
 # device
 $(call inherit-product-if-exists, device/samsung/toro/full_toro.mk)
 
-# cdma
-$(call inherit-product, vendor/carbon/config/common_cdma.mk)
-
 # phone
 $(call inherit-product, vendor/carbon/config/common_phone.mk)
 
