@@ -1,12 +1,12 @@
 [
  {
-   "repository": "android_kernel_samsung_tuna",
+   "remote": "cm",
+   "repository": "CyanogenMod/android_kernel_samsung_tuna",
    "target_path": "kernel/samsung/tuna",
-   "branch": "cm-10.1"
+   "revision": "cm-11.0"
  },
  {
-   "repository": "android_device_samsung_tuna",
-   "target_path": "device/samsung/tuna",
-   "branch": "jb2"
+   "repository": "CarbonDev/android_device_samsung_tuna",
+   "target_path": "device/samsung/tuna"
  }
 ]
