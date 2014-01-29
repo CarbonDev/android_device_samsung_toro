@@ -8,5 +8,9 @@
  {
    "repository": "CarbonDev/android_device_samsung_tuna",
    "target_path": "device/samsung/tuna"
+ },
+ {
+   "repository": "CarbonDev/proprietary_vendor_samsung",
+   "target_path": "vendor/samsung"
  }
 ]
